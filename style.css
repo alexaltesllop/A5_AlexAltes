@@ -10,21 +10,29 @@ body {
 }
 
 .pagina {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
 h1 {
-  font-size: 1.9rem;
-  line-height: 1;
+  font-size: 2.2rem;
+  line-height: 1.25;
   margin: 0 0 20px;
 }
 
 p {
-  font-size: 0.9rem;
-  line-height: 1.45;
+  font-size: 1.1rem;
+  line-height: 1.6;
   margin: 0 0 18px;
+}
+
+.seccio {
+  padding: 12px;
+}
+
+.ocult {
+  display: none;
 }
 
 .galeria {
