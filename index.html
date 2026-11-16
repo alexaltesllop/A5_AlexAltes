@@ -5,14 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lorem ipsum</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <main class="pagina">
-    <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam esse illum exercitationem perferendis accusamus, possimus sed molestiae accusantium necessitatibus neque sit aspernatur.</p>
+    <section class="seccio" onmouseover="resaltar(this)" onmouseout="restaurar(this)">
+      <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus facere, sequi. Beatae recusandae, officiis aperiam amet quod vero est vel.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam esse illum exercitationem perferendis accusamus, possimus sed molestiae accusantium necessitatibus neque sit aspernatur.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus facere, sequi. Beatae recusandae, officiis aperiam amet quod vero est vel.</p>
+
+      <p class="ocult">Este es el texto extra que solo se ve cuando el ratón está encima de la sección.</p>
+    </section>
 
     <div class="galeria">
       <img src="img/Arteon.jpg" alt="Volkswagen Arteon">
@@ -22,6 +28,7 @@
       <img src="img/Passat.jpg" alt="Volkswagen Passat">
       <img src="img/Polo.jpg" alt="Volkswagen Polo">
     </div>
+
   </main>
 </body>
 </html>
