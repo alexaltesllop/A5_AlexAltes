@@ -30,8 +30,10 @@ p {
 .galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  margin-top: 20px;
+  gap: 12px;
+  margin-top: 28px;
+  background: #000;
+  padding: 16px;
 }
 
 .galeria img {
