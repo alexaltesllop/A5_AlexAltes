@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Concessionari de cotxes Volkswagen">
+  <title>Concessionari de cotxes</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Rellotge fix a la part superior -->
+  <div id="rellotge">00:00:00</div>
+
+  <header class="capcalera">
+    <a class="logo" href="index.html">Concessionari Volkswagen</a>
+    <nav class="menu">
+      <a href="#models">Models</a>
+      <a href="#registre">Registre</a>
+    </nav>
+  </header>
+
+  <div class="linia"></div>
+
+  <main class="pagina">
+
+    <section class="introduccio">
+      <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam esse illum exercitationem perferendis accusamus, possimus sed molestiae accusantium necessitatibus neque sit aspernatur.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus facere, sequi. Beatae recusandae, officiis aperiam amet quod vero est vel.</p>
+    </section>
+
+    <!-- Secció que canvia de color i mostra un text ocult -->
+    <section id="seccio" onmouseover="resaltar()" onmouseout="restaurar()">
+      <h2>Els nostres models</h2>
+      <p id="textOcult">Tria el model que més t'agradi: tenim berlines, monovolums i compactes disponibles per a prova de conducció.</p>
+    </section>
+
+    <!-- Galeria: en clicar una imatge es veu en gran -->
+    <section id="models" class="galeria">
+      <img src="img/Arteon.jpg" alt="Volkswagen Arteon">
+      <img src="img/Caddy.jpg" alt="Volkswagen Caddy">
+      <img src="img/California.jpg" alt="Volkswagen California">
+      <img src="img/Golf.jpg" alt="Volkswagen Golf">
+      <img src="img/Passat.jpg" alt="Volkswagen Passat">
+      <img src="img/Polo.jpg" alt="Volkswagen Polo">
+    </section>
+
+    <!-- Formulari amb validació -->
+    <section id="registre" class="formulari">
+      <h2>Registre de clients</h2>
+
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom">
+
+      <label for="cognom">Cognom:</label>
+      <input type="text" id="cognom">
+
+      <label for="email">Correu electrònic:</label>
+      <input type="email" id="email">
+
+      <label for="pass1">Contrasenya:</label>
+      <input type="password" id="pass1">
+
+      <label for="pass2">Repeteix la contrasenya:</label>
+      <input type="password" id="pass2">
+
+      <button type="button" id="btnRegistrar">Registrar-se</button>
+    </section>
+
+  </main>
+
+  <div class="linia"></div>
+
+  <footer>
+    <p>Activitat realitzada per <b>Àlex Altés</b></p>
+  </footer>
+
+  <!-- Imatge ampliada -->
+  <div id="overlay-img">
+    <img id="overlay-img-src" src="" alt="Imatge ampliada">
+  </div>
+
+</body>
+</html>
