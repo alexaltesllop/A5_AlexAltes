@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Concessionari de cotxes Volkswagen">
+  <title>Concessionari de cotxes</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Rellotge fix a la part superior -->
+  <div id="rellotge">00:00:00</div>
+
+  <header class="capcalera">
+    <a class="logo" href="index.html">Concessionari Volkswagen</a>
+  </header>
+
+  <section class="introduccio">
+    <h1>Els nostres models disponibles</h1>
+
+    <p>Si ets nou client tenim unes grans rebaixes amb els models <strong>Golf</strong> i <strong>Arteon</strong>.</p>
+
+    <p>No sols hi ha bones notícies per als nous clients, ja que si ens portes el teu model vell de Volkswagen et fem un descompte únic i personalitzat.</p>
+  </section>
+
+  <main class="pagina">
+
+    <!-- Secció que canvia de color i mostra un text ocult -->
+    <section id="seccio" onmouseover="resaltar()" onmouseout="restaurar()">
+      <h2>Els nostres models</h2>
+      <p id="textOcult">Tria el model que més t'agradi: tenim berlines, monovolums i compactes disponibles per a prova de conducció.</p>
+    </section>
+
+    <!-- Galeria: una imatge a sota de l'altra. El text canvia amb el ratolí; en clicar la imatge es veu en gran -->
+    <section id="models" class="galeria">
+
+      <figure class="model" tabindex="0"
+              onmouseover="resaltarModel(this)" onmouseout="restaurarModel(this)"
+              onfocus="resaltarModel(this)" onblur="restaurarModel(this)">
+        <div class="escenari">
+          <img src="img/Arteon.jpg" alt="Volkswagen Arteon">
+        </div>
+        <figcaption>
+          <h3>Arteon</h3>
+          <p class="detall">Berlina d'estil coupé, elegant i espaiosa. Ara amb una gran rebaixa per als nous clients.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="model" tabindex="0"
+              onmouseover="resaltarModel(this)" onmouseout="restaurarModel(this)"
+              onfocus="resaltarModel(this)" onblur="restaurarModel(this)">
+        <div class="escenari">
+          <img src="img/Caddy.jpg" alt="Volkswagen Caddy">
+        </div>
+        <figcaption>
+          <h3>Caddy</h3>
+          <p class="detall">Monovolum versàtil, amb molt espai per a la família i per a la feina del dia a dia.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="model" tabindex="0"
+              onmouseover="resaltarModel(this)" onmouseout="restaurarModel(this)"
+              onfocus="resaltarModel(this)" onblur="restaurarModel(this)">
+        <div class="escenari">
+          <img src="img/California.jpg" alt="Volkswagen California">
+        </div>
+        <figcaption>
+          <h3>California</h3>
+          <p class="detall">La furgoneta camper de Volkswagen: viatja i dorm allà on tu vulguis.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="model" tabindex="0"
+              onmouseover="resaltarModel(this)" onmouseout="restaurarModel(this)"
+              onfocus="resaltarModel(this)" onblur="restaurarModel(this)">
+        <div class="escenari">
+          <img src="img/Golf.jpg" alt="Volkswagen Golf">
+        </div>
+        <figcaption>
+          <h3>Golf</h3>
+          <p class="detall">El compacte de referència. Ara amb una gran rebaixa per als nous clients.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="model" tabindex="0"
+              onmouseover="resaltarModel(this)" onmouseout="restaurarModel(this)"
+              onfocus="resaltarModel(this)" onblur="restaurarModel(this)">
+        <div class="escenari">
+          <img src="img/Passat.jpg" alt="Volkswagen Passat">
+        </div>
+        <figcaption>
+          <h3>Passat</h3>
+          <p class="detall">Berlina còmoda i tranquil·la, pensada per fer molts quilòmetres.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="model" tabindex="0"
+              onmouseover="resaltarModel(this)" onmouseout="restaurarModel(this)"
+              onfocus="resaltarModel(this)" onblur="restaurarModel(this)">
+        <div class="escenari">
+          <img src="img/Polo.jpg" alt="Volkswagen Polo">
+        </div>
+        <figcaption>
+          <h3>Polo</h3>
+          <p class="detall">Utilitari àgil i còmode, ideal per moure's per la ciutat.</p>
+        </figcaption>
+      </figure>
+
+    </section>
+
+    <!-- Formulari amb validació -->
+    <section id="registre" class="formulari">
+      <h2>Registre de clients</h2>
+
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom">
+
+      <label for="cognom">Cognom:</label>
+      <input type="text" id="cognom">
+
+      <label for="email">Correu electrònic:</label>
+      <input type="email" id="email">
+
+      <label for="pass1">Contrasenya:</label>
+      <input type="password" id="pass1">
+
+      <label for="pass2">Repeteix la contrasenya:</label>
+      <input type="password" id="pass2">
+
+      <button type="button" id="btnRegistrar">Registrar-se</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Activitat realitzada per <b>Àlex Altés</b></p>
+  </footer>
+
+  <!-- Imatge ampliada -->
+  <div id="overlay-img">
+    <img id="overlay-img-src" src="" alt="Imatge ampliada">
+  </div>
+
+</body>
+</html>
