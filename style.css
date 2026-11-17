@@ -38,7 +38,7 @@ body {
 .logo {
   font-size: 2rem;
   font-weight: bold;
-  color: #1d3557;
+  color: #000;
   text-decoration: none;
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 .menu a {
-  color: #4a90b8;
+  color: #000;
   text-decoration: none;
 }
 
