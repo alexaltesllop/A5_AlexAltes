@@ -32,7 +32,7 @@ body {
   gap: 2rem;
   min-height: 7rem;
   padding: 0 2rem;
-  background: lightyellow;
+  background: #5B6EDE;
 }
 
 .logo {
@@ -95,7 +95,7 @@ p {
   width: 70%;
   margin: 20px auto;
   padding: 20px;
-  background: lightyellow;
+  background: #5B6EDE;
   color: #000;
   border-radius: 10px;
   text-align: center;
@@ -202,7 +202,7 @@ p {
 /* Peu de pàgina */
 footer {
   padding: 1.5rem 2rem;
-  background: lightyellow;
+  background: #5B6EDE;
 }
 
 footer p {
